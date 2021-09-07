@@ -1,0 +1,8 @@
+### Paths #################################################
+
+DATA_PATH= ./gogs/data
+
+GOGS_SSH_PORT=10022
+
+GOGS_HOST_PORT=10880
+

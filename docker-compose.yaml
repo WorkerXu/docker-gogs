@@ -1,0 +1,15 @@
+version: : "3.0"
+
+services:
+  gogs-application:
+    container_name: gogs-application
+    image: gogs/gogs
+    restart: always
+    ports:
+      - ${GOGS_SSH_PORT}:22
+      - ${GOGS_HOST_PORT}:3000
+    volumes:
+      - ${DATA_PATH}:/data
+    environment:
+      - RUN_CROND=true
+    
